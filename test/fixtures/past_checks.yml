@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employment_history: one
+  audited_changes: 
+  audited_at: 2026-10-25 07:05:47
+
+two:
+  employment_history: two
+  audited_changes: 
+  audited_at: 2026-10-25 07:05:47

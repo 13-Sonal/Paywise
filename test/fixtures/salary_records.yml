@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  compensation: 9.99
+  currency: MyString
+  effective_from: 2026-10-25
+
+two:
+  user: two
+  compensation: 9.99
+  currency: MyString
+  effective_from: 2026-10-25
