@@ -6,7 +6,6 @@ Paywise is an employee management and compensation application built using React
 
 The application provides employee information management, role-based access control, salary management, and employment history tracking.
 
-
 The system follows a decoupled architecture, with React responsible for the user interface and Rails providing REST APIs, authentication, authorization, and business logic.
 
 ### Technology Stack
