@@ -13,7 +13,15 @@ class User < ApplicationRecord
               with: /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/,
               message: "must contain a valid email domain"
             }
-  validates :password, presence: true          
+  validates :password, presence: true
+
+  def role_name
+    role&.name&.strip
+  end
+
+  def has_role?(*role_names)
+    role_names.include?(role_name)
+  end
 
   # validates :primary_contact_number, presence: true
   # validates :emergency_contact_number, presence: true
@@ -21,10 +29,10 @@ class User < ApplicationRecord
   # validate :phone_numbers_match_country_format
 
   # enum :role, {
-  #   admin: "admin", 
+  #   admin: "admin",
   #   hr_manager: "hr_manager",
   #   hr: "hr"
-          
+
   # }
   private
 

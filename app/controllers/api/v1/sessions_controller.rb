@@ -1,7 +1,7 @@
 module Api
   module V1
     class SessionsController < ApplicationController
-      skip_before_action :authenticate_request, only: [:create]
+      skip_before_action :authenticate_request, only: [ :create ]
 
       def create
         user = User.find_by(email: params[:email]&.downcase&.strip)
@@ -20,8 +20,7 @@ module Api
             name: user.name,
             email: user.email,
             role_id: user.role_id,
-            role_name: user.role&.name&.strip
-
+            role_name: user.role_name
           }
         }, status: :ok
       end
